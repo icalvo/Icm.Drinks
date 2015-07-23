@@ -29,5 +29,6 @@ namespace Icm.Drinks.Domain.Drinks
         public string Name { get; }
         public string ShortDescription { get; }
         public string FullDescription { get; }
+        public static DrinkType Cocktail { get; } = new DrinkType("Cocktail", "Blabla", "Blablabla");
     }
 }

@@ -4,7 +4,7 @@ namespace Icm.Drinks.Domain.Drinks
 {
     public class Fraction
     {
-        public Fraction(int numerator, int denominator)
+        public Fraction(int numerator, int denominator = 1)
         {
             if (denominator == 0)
             {
@@ -17,12 +17,6 @@ namespace Icm.Drinks.Domain.Drinks
 
         public int Numerator { get; }
         public int Denominator { get; }
-        public double Value
-        {
-            get
-            {
-                return Numerator / Denominator;
-            }
-        }
+        public double Value => (double)Numerator / Denominator;
     }
 }

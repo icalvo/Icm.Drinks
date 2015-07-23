@@ -41,14 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drinks\DrinkAddedEvent.cs" />
+    <Compile Include="IEventBus.cs" />
+    <Compile Include="Query\DrinksByIngredient.cs" />
+    <Compile Include="Drinks\DrinkService.cs" />
     <Compile Include="Drinks\Drink.cs" />
     <Compile Include="Drinks\DrinkType.cs" />
+    <Compile Include="Drinks\IDrinkRepository.cs" />
     <Compile Include="Drinks\IngredientLine.cs" />
     <Compile Include="Drinks\Fraction.cs" />
-    <Compile Include="Ingredient.cs" />
+    <Compile Include="Query\IDrinksByIngredientRepository.cs" />
+    <Compile Include="Ingredients\IIngredientRepository.cs" />
+    <Compile Include="Ingredients\Ingredient.cs" />
+    <Compile Include="Ingredients\IngredientId.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Drinks\Quantity.cs" />
     <Compile Include="Drinks\Unit.cs" />
+    <Compile Include="SynchronousEventBus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
